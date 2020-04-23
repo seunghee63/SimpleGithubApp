@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_SearchActivity"
+        android:icon="@drawable/ic_android_white_24dp"
+        android:title="Search"/>
+
+    <item
+    android:id="@+id/menu_MainActivity"
+    android:icon="@drawable/ic_android_white_24dp"
+    android:title="Main"/>
+
+    <item
+        android:id="@+id/menu_Following"
+        android:icon="@drawable/ic_android_white_24dp"
+        android:title="Following"/>
+</menu>
