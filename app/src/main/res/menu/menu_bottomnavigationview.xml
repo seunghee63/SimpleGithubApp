@@ -14,4 +14,10 @@
         android:id="@+id/menu_Following"
         android:icon="@drawable/ic_android_white_24dp"
         android:title="Following"/>
+
+    <item
+        android:id="@+id/menu_Follower"
+        android:icon="@drawable/ic_android_white_24dp"
+        android:title="Follower"/>
+
 </menu>
