@@ -6,20 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BottomNavigationBar"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:background="#50000000"
-        app:itemIconTint="#ffffffff"
-        app:itemTextColor="#FFFFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottomnavigationview" />
-
     <TextView
-        android:id="@+id/Follower_txtFollower"
+        android:id="@+id/follower_txtFollower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -33,10 +21,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/BottomNavigationBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Follower_txtFollower">
+        app:layout_constraintTop_toBottomOf="@+id/follower_txtFollower">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout"
@@ -44,7 +32,7 @@
             android:layout_height="wrap_content">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
+                android:id="@+id/follower_recyclerFollower"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +43,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/Follower_txtNum"
+        android:id="@+id/follower_txtNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

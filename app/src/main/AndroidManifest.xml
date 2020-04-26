@@ -19,6 +19,10 @@
         </activity>
 
         <activity android:name=".SearchActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".FollowingActivity"/>
+        <activity android:name=".FollowerActivity"/>
+
     </application>
 
 </manifest>

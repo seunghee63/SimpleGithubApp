@@ -7,14 +7,14 @@
     android:layout_height="match_parent">
 
     <ScrollView
-        android:id="@+id/Search_scrollView"
+        android:id="@+id/search_scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/BottomNavigationBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSearch">
+        app:layout_constraintTop_toBottomOf="@+id/search_txtSearch">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Search_Constraint"
@@ -37,20 +37,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BottomNavigationBar"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:background="#50000000"
-        app:itemIconTint="#ffffffff"
-        app:itemTextColor="#FFFFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottomnavigationview" />
-
     <EditText
-        android:id="@+id/txtSearch"
+        android:id="@+id/search_txtSearch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -58,12 +46,12 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/BtnSearch"
+        app:layout_constraintEnd_toStartOf="@+id/search_btnSearch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/BtnSearch"
+        android:id="@+id/search_btnSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/item_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -17,28 +17,28 @@
         app:srcCompat="@drawable/ic_android_white_24dp" />
 
     <TextView
-        android:id="@+id/txtProfileID"
+        android:id="@+id/item_txtProfileID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:maxLength="30"
         android:text="ID"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/item_imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtProfileCompany"
+        android:id="@+id/item_txtProfileCompany"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Company"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/txtProfileID" />
+        app:layout_constraintStart_toEndOf="@+id/item_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/item_txtProfileID" />
 
     <TextView
-        android:id="@+id/txtProfileUpdated"
+        android:id="@+id/item_txtProfileUpdated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

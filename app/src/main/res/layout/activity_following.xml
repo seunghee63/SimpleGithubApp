@@ -6,20 +6,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BottomNavigationBar"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:background="#50000000"
-        app:itemIconTint="#ffffffff"
-        app:itemTextColor="#FFFFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottomnavigationview" />
-
     <TextView
-        android:id="@+id/Following_txtFollowing"
+        android:id="@+id/following_txtFollowing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -34,10 +22,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/BottomNavigationBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Following_txtFollowing">
+        app:layout_constraintTop_toBottomOf="@+id/following_txtFollowing">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Follwing_ConstraintLayout"
@@ -45,7 +33,7 @@
             android:layout_height="wrap_content">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/Following_RecyclerFollowing"
+                android:id="@+id/following_recyclerFollowing"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +44,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/Following_txtNum"
+        android:id="@+id/following_txtNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

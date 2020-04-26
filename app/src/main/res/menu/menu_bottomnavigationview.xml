@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/menu_SearchActivity"
-        android:icon="@drawable/ic_android_white_24dp"
-        android:title="Search"/>
 
     <item
-    android:id="@+id/menu_MainActivity"
+    android:id="@+id/menu_ProfileActivity"
     android:icon="@drawable/ic_android_white_24dp"
     android:title="Main"/>
 
     <item
-        android:id="@+id/menu_Following"
+        android:id="@+id/menu_FollowingActivity"
         android:icon="@drawable/ic_android_white_24dp"
         android:title="Following"/>
 
     <item
-        android:id="@+id/menu_Follower"
+        android:id="@+id/menu_FollowerActivity"
         android:icon="@drawable/ic_android_white_24dp"
         android:title="Follower"/>
+
+    <item
+        android:id="@+id/menu_SearchActivity"
+        android:icon="@drawable/ic_android_white_24dp"
+        android:title="Search"/>
 
 </menu>
