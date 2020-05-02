@@ -4,7 +4,7 @@
     <item
     android:id="@+id/menu_ProfileActivity"
     android:icon="@drawable/ic_android_white_24dp"
-    android:title="Main"/>
+    android:title="Profile"/>
 
     <item
         android:id="@+id/menu_FollowingActivity"

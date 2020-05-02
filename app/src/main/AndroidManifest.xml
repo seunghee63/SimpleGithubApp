@@ -18,10 +18,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SearchActivity"/>
-        <activity android:name=".ProfileActivity"/>
-        <activity android:name=".FollowingActivity"/>
-        <activity android:name=".FollowerActivity"/>
+        <activity android:name=".Search"/>
+        <activity android:name=".Profile"/>
+        <activity android:name=".Following"/>
+        <activity android:name=".Follower"/>
 
     </application>
 
