@@ -16,4 +16,5 @@ class FeedFragment : Fragment(R.layout.fragment_feed) {
         val adapter = TestListAdapter()
         adapter.submitList(listOf(Test("", "")))
     }
+
 }
