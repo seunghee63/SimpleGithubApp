@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.song2.mygitapp.R
 import com.song2.mygitapp.data.GetStarResponse
-import com.song2.mygitapp.network.ApplicationClient
+import com.song2.mygitapp.network.ApiClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,7 +22,7 @@ class StarFragment : Fragment() {
 
     private fun getStarResponse(id: String) {
         val getStarResponse =
-            ApplicationClient.service.getStarResponse(id)
+            ApiClient.service.getStarResponse(id)
 
         getStarResponse.enqueue(object : Callback<List<GetStarResponse>> {
 

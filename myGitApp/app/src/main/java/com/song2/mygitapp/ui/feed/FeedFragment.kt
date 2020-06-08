@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.fragment.app.Fragment
 import com.song2.mygitapp.R
 import com.song2.mygitapp.data.GetFeedResponse
-import com.song2.mygitapp.network.ApplicationClient
+import com.song2.mygitapp.network.ApiClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -21,7 +21,7 @@ class FeedFragment : Fragment(R.layout.fragment_feed) {
 
     private fun getFeedResponse(id : String?) {
         val getFeedResponse =
-            ApplicationClient.service.getFeedResponse(id)
+            ApiClient.service.getFeedResponse(id)
 
         getFeedResponse.enqueue(object : Callback<List<GetFeedResponse>> {
 
