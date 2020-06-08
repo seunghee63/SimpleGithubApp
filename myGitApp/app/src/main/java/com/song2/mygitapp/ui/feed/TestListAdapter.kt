@@ -1,4 +1,4 @@
-package com.song2.mygitapp.ui
+package com.song2.mygitapp.ui.feed
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -6,10 +6,10 @@
     app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/activityFragment"
-        android:name="com.song2.mygitapp.ui.activity.ActivityFragment"
-        android:label="@string/activity"
-        tools:layout="@layout/fragment_activity" />
+        android:id="@+id/feedFragment"
+        android:name="com.song2.mygitapp.ui.feed.FeedFragment"
+        android:label="@string/feed"
+        tools:layout="@layout/fragment_feed" />
 
 
     <fragment

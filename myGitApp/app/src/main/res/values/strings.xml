@@ -2,6 +2,6 @@
     <string name="app_name">myGitApp</string>
 
     <string name="home">home</string>
-    <string name="activity">activity</string>
+    <string name="feed">feed</string>
     <string name="myPage">myPage</string>
 </resources>

@@ -4,7 +4,7 @@
     <data>
         <variable
             name="test"
-            type="com.song2.mygitapp.ui.Test" />
+            type="com.song2.mygitapp.ui.feed.Test" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
