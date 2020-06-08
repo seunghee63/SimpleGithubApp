@@ -20,8 +20,8 @@
 
 
     <fragment
-        android:id="@+id/myPageFragment"
-        android:name="com.song2.mygitapp.ui.mypage.MyPageFragment"
-        android:label="@string/myPage"
-        tools:layout="@layout/fragment_mypage" />
+        android:id="@+id/starFragment"
+        android:name="com.song2.mygitapp.ui.star.StarFragment"
+        android:label="@string/star"
+        tools:layout="@layout/fragment_star" />
 </navigation>

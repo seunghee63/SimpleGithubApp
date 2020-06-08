@@ -1,4 +1,4 @@
-package com.song2.mygitapp.ui.mypage
+package com.song2.mygitapp.ui.star
 
 import android.os.Bundle
 import android.util.Log
@@ -13,11 +13,11 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MyPageFragment : Fragment() {
+class StarFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         getStarResponse("seunghee63")
-        return inflater.inflate(R.layout.fragment_mypage, container, false)
+        return inflater.inflate(R.layout.fragment_star, container, false)
     }
 
     private fun getStarResponse(id: String) {
