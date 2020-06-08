@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">myGitApp</string>
+
+    <string name="home">home</string>
+    <string name="activity">activity</string>
+    <string name="myPage">myPage</string>
 </resources>
