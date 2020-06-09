@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import com.song2.mygitapp.R
+import com.song2.mygitapp.databinding.FragmentHomeBinding
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
@@ -16,7 +16,8 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return FragmentHomeBinding.inflate(inflater, container, false)
+            .apply { info = Info("Seunghee63", "이미ㅣ지지") }.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
