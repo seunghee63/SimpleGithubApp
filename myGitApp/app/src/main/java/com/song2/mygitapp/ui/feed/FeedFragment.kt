@@ -15,7 +15,6 @@ class FeedFragment : Fragment(R.layout.fragment_feed) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        setRecyclerView()
         getFeedResponse("seunghee63")
     }
 
@@ -43,8 +42,4 @@ class FeedFragment : Fragment(R.layout.fragment_feed) {
         })
     }
 
-    fun setRecyclerView(){
-        val adapter = TestListAdapter()
-        adapter.submitList(listOf(Test("", "")))
-    }
 }
