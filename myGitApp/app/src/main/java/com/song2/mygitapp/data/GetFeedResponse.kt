@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class GetFeedResponse(
     @SerializedName("actor")
-    val actor: Actor,
+    val githubUser: GithubUser,
     @SerializedName("created_at")
     val createdAt: String,
     @SerializedName("id")
