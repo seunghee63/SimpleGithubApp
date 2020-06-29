@@ -7,20 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.song2.mygitapp.R
 import com.song2.mygitapp.data.GetFeedResponse
+import com.song2.mygitapp.databinding.FragmentFeedBinding
 import com.song2.mygitapp.network.MyGitApplication.Companion.getMyGitApplication
 import com.song2.mygitapp.ui.star.StarListAdapter
 import com.song2.mygitapp.ui.star.StarRepo
-import kotlinx.android.synthetic.main.fragment_feed.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class FeedFragment : Fragment() {
+    lateinit var binding: FragmentFeedBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_feed, container, false)
+        binding = FragmentFeedBinding.inflate(inflater, container, false)
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,8 +38,11 @@ class FeedFragment : Fragment() {
             StarRepo("0", "seunghee63","FlowerRecognition","This project identify some kind of flowers and developed by Android users.", " Java", 3,"16 Jan"),
             StarRepo("0", "seunghee63","FlowerRecognition","This project identify some kind of flowers and developed by Android users.", " Java", 3,"16 Jan")
         ))
-        rv_feed_list.layoutManager = LinearLayoutManager(activity)
-        rv_feed_list.adapter = adapter
+
+        binding.apply {
+            rvFeedList.layoutManager = LinearLayoutManager(activity)
+            rvFeedList.adapter = adapter
+        }
     }
 
     private fun getFeedResponse(id : String?) {
