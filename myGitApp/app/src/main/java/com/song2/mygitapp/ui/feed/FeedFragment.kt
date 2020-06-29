@@ -9,11 +9,10 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.song2.mygitapp.R
 import com.song2.mygitapp.data.GetFeedResponse
-import com.song2.mygitapp.network.ApiClient
+import com.song2.mygitapp.network.MyGitApplication.Companion.getMyGitApplication
 import com.song2.mygitapp.ui.star.StarListAdapter
 import com.song2.mygitapp.ui.star.StarRepo
 import kotlinx.android.synthetic.main.fragment_feed.*
-import kotlinx.android.synthetic.main.fragment_star.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -42,8 +41,7 @@ class FeedFragment : Fragment() {
     }
 
     private fun getFeedResponse(id : String?) {
-        val getFeedResponse =
-            ApiClient.service.getFeedResponse(id)
+        val getFeedResponse = getMyGitApplication().service.getFeedResponse(id)
 
         getFeedResponse.enqueue(object : Callback<List<GetFeedResponse>> {
 

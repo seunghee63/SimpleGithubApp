@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.song2.mygitapp.R
 import com.song2.mygitapp.data.GetStarResponse
-import com.song2.mygitapp.network.ApiClient
+import com.song2.mygitapp.network.MyGitApplication.Companion.getMyGitApplication
 import kotlinx.android.synthetic.main.fragment_star.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -35,7 +35,7 @@ class StarFragment : Fragment() {
 
     private fun getStarResponse(id: String) {
         val getStarResponse =
-            ApiClient.service.getStarResponse(id)
+            getMyGitApplication().service.getStarResponse(id)
 
         getStarResponse.enqueue(object : Callback<List<GetStarResponse>> {
 
