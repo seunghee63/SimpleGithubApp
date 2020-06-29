@@ -3,7 +3,7 @@ package com.song2.mygitapp.data
 
 import com.google.gson.annotations.SerializedName
 
-data class Repo(
+data class Repository(
     @SerializedName("id")
     val id: Int,
     @SerializedName("name")

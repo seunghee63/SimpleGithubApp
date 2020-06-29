@@ -114,9 +114,9 @@ data class GetMyStarListResponse(
     @SerializedName("open_issues_count")
     val openIssuesCount: Int,
     @SerializedName("owner")
-    val owner: Owner,
+    val repositoryOwner: RepositoryOwner,
     @SerializedName("permissions")
-    val permissions: Permissions,
+    val repositoryPermissions: RepositoryPermissions,
     @SerializedName("private")
     val `private`: Boolean,
     @SerializedName("pulls_url")

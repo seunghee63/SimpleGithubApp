@@ -111,7 +111,7 @@ data class Forkee(
     @SerializedName("open_issues_count")
     val openIssuesCount: Int,
     @SerializedName("owner")
-    val owner: OwnerX,
+    val repositoryOwner: RepositoryOwner,
     @SerializedName("private")
     val `private`: Boolean,
     @SerializedName("public")

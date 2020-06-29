@@ -1,9 +1,8 @@
 package com.song2.mygitapp.data
 
-
 import com.google.gson.annotations.SerializedName
 
-data class OwnerX(
+data class RepositoryOwner(
     @SerializedName("avatar_url")
     val avatarUrl: String,
     @SerializedName("events_url")

@@ -11,13 +11,13 @@ data class GetMyFeedListResponse(
     @SerializedName("id")
     val id: String,
     @SerializedName("org")
-    val org: Org,
+    val organization: Organization,
     @SerializedName("payload")
     val payload: Payload,
     @SerializedName("public")
     val `public`: Boolean,
     @SerializedName("repo")
-    val repo: Repo,
+    val repository: Repository,
     @SerializedName("type")
     val type: String
 )

@@ -3,7 +3,7 @@ package com.song2.mygitapp.data
 
 import com.google.gson.annotations.SerializedName
 
-data class Org(
+data class Organization(
     @SerializedName("avatar_url")
     val avatarUrl: String,
     @SerializedName("gravatar_id")
