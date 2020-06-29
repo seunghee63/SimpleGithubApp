@@ -23,12 +23,6 @@ class StarListAdapter : ListAdapter<StarRepo, StarListAdapter.ViewHolder>(
         }
     }
 
-    inner class ViewHolder(private val binding: ItemStartsBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(starRepo : StarRepo){
-            binding.starRepo = starRepo
-        }
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = ItemStartsBinding.inflate(layoutInflater)
@@ -40,6 +34,12 @@ class StarListAdapter : ListAdapter<StarRepo, StarListAdapter.ViewHolder>(
         val item = getItem(position)
 
         holder.bind(item)
+    }
+
+    inner class ViewHolder(private val binding: ItemStartsBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(starRepo : StarRepo){
+            binding.starRepo = starRepo
+        }
     }
 }
 

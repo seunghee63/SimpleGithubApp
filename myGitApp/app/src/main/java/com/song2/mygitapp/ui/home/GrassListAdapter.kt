@@ -22,12 +22,6 @@ class GrassListAdapter : ListAdapter<Grass, GrassListAdapter.ViewHolder>(
         }
     }
 
-    inner class ViewHolder(private val binding: ItemGrassBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(grass : Grass){
-            binding.grass = grass
-        }
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = ItemGrassBinding.inflate(layoutInflater)
@@ -39,6 +33,12 @@ class GrassListAdapter : ListAdapter<Grass, GrassListAdapter.ViewHolder>(
         val item = getItem(position)
 
         holder.bind(item)
+    }
+
+    inner class ViewHolder(private val binding: ItemGrassBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(grass : Grass){
+            binding.grass = grass
+        }
     }
 }
 
