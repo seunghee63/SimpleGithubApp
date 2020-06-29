@@ -21,9 +21,8 @@ fun setImageUrl(view: ImageView, profile: String) {
         .into(view)
 }
 
-@BindingAdapter("app:set_data")
+@BindingAdapter("app:set_recycler_layoutmanager")
 fun setData(view: RecyclerView, openDatas: List<StarRepo>?) {
-
     (view.adapter as StarListAdapter).run {
         submitList(openDatas)
     }
