@@ -7,6 +7,9 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface NetworkService {
+    companion object{
+        val BASE_URL = "https://api.github.com/"
+    }
 
     @GET("/users/{username}/starred")
     fun getStarResponse(

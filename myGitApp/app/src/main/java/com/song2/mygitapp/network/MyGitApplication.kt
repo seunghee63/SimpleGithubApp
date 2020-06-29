@@ -19,11 +19,10 @@ class MyGitApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        val BASE_URL = "https://api.github.com/"
         instance = this
 
         val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(NetworkService.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
