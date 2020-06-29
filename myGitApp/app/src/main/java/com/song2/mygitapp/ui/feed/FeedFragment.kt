@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.song2.mygitapp.data.GetFeedResponse
+import com.song2.mygitapp.data.GetMyFeedListResponse
 import com.song2.mygitapp.databinding.FragmentFeedBinding
 import com.song2.mygitapp.network.MyGitApplication.Companion.getMyGitApplication
 import com.song2.mygitapp.ui.star.StarListAdapter
@@ -48,18 +48,18 @@ class FeedFragment : Fragment() {
     private fun getFeedResponse(id : String?) {
         val getFeedResponse = getMyGitApplication().service.getFeedResponse(id)
 
-        getFeedResponse.enqueue(object : Callback<List<GetFeedResponse>> {
+        getFeedResponse.enqueue(object : Callback<List<GetMyFeedListResponse>> {
 
-            override fun onFailure(call: Call<List<GetFeedResponse>>, t: Throwable) {
+            override fun onFailure(call: Call<List<GetMyFeedListResponse>>, t: Throwable) {
                 Log.e("get feed fail", t.toString())
             }
 
             override fun onResponse(
-                call: Call<List<GetFeedResponse>>,
-                response: Response<List<GetFeedResponse>>
+                call: Call<List<GetMyFeedListResponse>>,
+                listResponseMy: Response<List<GetMyFeedListResponse>>
             ) {
-                if (response.isSuccessful) {
-                    Log.v("get feed Success", "성공 +${response.body()!!}")
+                if (listResponseMy.isSuccessful) {
+                    Log.v("get feed Success", "성공 +${listResponseMy.body()!!}")
 
                 } else {
                     Log.v("get feed Success", "성공 - error")

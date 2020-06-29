@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.song2.mygitapp.data.GetStarResponse
+import com.song2.mygitapp.data.GetMyStarListResponse
 import com.song2.mygitapp.databinding.FragmentStarBinding
 import com.song2.mygitapp.network.MyGitApplication.Companion.getMyGitApplication
 import retrofit2.Call
@@ -43,18 +43,18 @@ class StarFragment : Fragment() {
         val getStarResponse =
             getMyGitApplication().service.getStarResponse(id)
 
-        getStarResponse.enqueue(object : Callback<List<GetStarResponse>> {
+        getStarResponse.enqueue(object : Callback<List<GetMyStarListResponse>> {
 
-            override fun onFailure(call: Call<List<GetStarResponse>>, t: Throwable) {
+            override fun onFailure(call: Call<List<GetMyStarListResponse>>, t: Throwable) {
                 Log.e("get StarList fail", t.toString())
             }
 
             override fun onResponse(
-                call: Call<List<GetStarResponse>>,
-                response: Response<List<GetStarResponse>>
+                call: Call<List<GetMyStarListResponse>>,
+                listResponseMy: Response<List<GetMyStarListResponse>>
             ) {
-                if (response.isSuccessful) {
-                    Log.v("get StarList Success", "성공 +${response.body()!!}")
+                if (listResponseMy.isSuccessful) {
+                    Log.v("get StarList Success", "성공 +${listResponseMy.body()!!}")
 
                 } else {
                     Log.v("get StarList Success", "성공 - error")

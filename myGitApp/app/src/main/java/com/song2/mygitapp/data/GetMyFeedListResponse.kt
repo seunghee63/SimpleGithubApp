@@ -3,7 +3,7 @@ package com.song2.mygitapp.data
 
 import com.google.gson.annotations.SerializedName
 
-data class GetFeedResponse(
+data class GetMyFeedListResponse(
     @SerializedName("actor")
     val githubUser: GithubUser,
     @SerializedName("created_at")

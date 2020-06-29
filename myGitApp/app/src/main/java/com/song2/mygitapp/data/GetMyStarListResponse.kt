@@ -2,7 +2,7 @@ package com.song2.mygitapp.data
 
 import com.google.gson.annotations.SerializedName
 
-data class GetStarResponse(
+data class GetMyStarListResponse(
     @SerializedName("allow_merge_commit")
     val allowMergeCommit: Boolean,
     @SerializedName("allow_rebase_merge")
